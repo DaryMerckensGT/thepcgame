@@ -29,3 +29,6 @@ group :development do
   gem 'hub', :require=>nil
   gem 'rails_layout'
 end
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+gem 'cancancan'
