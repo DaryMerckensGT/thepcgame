@@ -18,7 +18,7 @@ development:
   encoding: unicode
   database: thepcgame_development
   pool:     5
-  username: admin
+  username: merckens
   password: 
   template: template0
 
@@ -46,7 +46,7 @@ test:
   encoding: unicode
   database: thepcgame_test
   pool:     5
-  username: admin
+  username: merckens
   password: 
   template: template0
 
@@ -56,6 +56,6 @@ production:
   encoding: unicode
   database: thepcgame_production
   pool:     5
-  username: admin
-  password: 
+  username: thepcgame
+  password: <%= ENV['THEPCGAME_DATABASE_PASSWORD'] %>
   template: template0
