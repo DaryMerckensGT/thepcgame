@@ -28,7 +28,6 @@ group :development do
   gem 'hub', :require=>nil
   gem 'rails_layout'
   gem 'foreman'
-  gem 'thin'
 end
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
