@@ -22,13 +22,16 @@ gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'devise'
 gem 'high_voltage'
 gem 'pg'
-gem 'unicorn'
-gem 'unicorn-rails'
 group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'hub', :require=>nil
   gem 'rails_layout'
+  gem 'foreman'
+  gem 'thin'
 end
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'cancancan'
+gem 'paperclip', '~> 5.0.0'
+gem 'aws-sdk', '~> 2.3.0'

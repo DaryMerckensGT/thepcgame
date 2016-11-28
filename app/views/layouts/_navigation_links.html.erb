@@ -6,6 +6,7 @@
   <li class='nav-item'><%= link_to('Login', new_user_session_path, class: 'nav-link')  %></li>
 <% else %>
 	<li class='nav-item'><%= link_to root_path, class: 'nav-link login-button' do %>Go to App<% end %></li>
+	<li class='nav-item'><%= link_to user_images_path(current_user), class: 'nav-link login-button' do %>View Your Images<% end %></li>
 	<li class='nav-item'><%= link_to('Edit registration', edit_user_registration_path, class: 'nav-link') %></li>
   <li class='nav-item'><%= link_to('Logout', destroy_user_session_path, class: 'nav-link', :method => :delete) %></li>
 <% end %>
